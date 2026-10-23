@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download the in-class R and R Markdown exercises for Jing Qian’s Harvard Catalyst short course on truncated time-to-event data, October 23, 2026.">
+  <link rel="canonical" href="https://jqian-lab.github.io/course/truncation/">
+  <title>Truncated time-to-event data · Course exercises</title>
+  <style>
+    :root { color-scheme: light; --ink:#25272d; --muted:#666772; --accent:#881c1c; --border:#dedee4; --paper:#fff; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#f6f5f3; color:var(--ink); font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    body::before { display:block; height:7px; background:var(--accent); content:""; }
+    main { max-width:910px; margin:0 auto; padding:62px 28px 46px; }
+    .eyebrow { margin:0 0 17px; color:var(--accent); font-size:12px; line-height:1.5; letter-spacing:.13em; text-transform:uppercase; font-weight:750; }
+    h1 { max-width:800px; margin:0; font-size:clamp(30px,4.7vw,46px); line-height:1.15; letter-spacing:-.035em; font-weight:720; }
+    .subtitle { margin:15px 0 25px; font-size:20px; color:var(--muted); }
+    .instructor { margin:0; }
+    .affiliation { display:block; color:var(--muted); font-size:15px; }
+    .date { margin:20px 0 0; color:var(--muted); font-size:14px; }
+    .materials { margin-top:42px; border-top:1px solid var(--border); padding-top:30px; }
+    h2 { margin:0 0 6px; font-size:24px; letter-spacing:-.02em; line-height:1.3; }
+    .intro { margin:0 0 24px; color:var(--muted); }
+    .cards { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    .card { display:flex; flex-direction:column; align-items:flex-start; background:var(--paper); border:1px solid var(--border); border-radius:12px; padding:25px; }
+    .badge { display:inline-block; font:700 13px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace; color:var(--accent); border:1px solid #e8d2d2; background:#fbf3f3; padding:6px 9px; border-radius:5px; }
+    h3 { margin:17px 0 6px; font-size:21px; line-height:1.3; }
+    .card p { margin:0 0 22px; color:var(--muted); font-size:15px; }
+    .download { display:inline-flex; align-items:center; justify-content:center; margin-top:auto; padding:11px 17px; border:1px solid var(--accent); border-radius:6px; background:var(--accent); color:white; font-size:15px; font-weight:650; text-decoration:none; line-height:1.4; }
+    .secondary { color:var(--accent); background:white; }
+    .download:hover { background:#6b1515; color:#fff; border-color:#6b1515; }
+    a:focus-visible { outline:3px solid #316cbc; outline-offset:4px; }
+    .filename { display:block; margin-top:13px; color:var(--muted); font:11px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace; overflow-wrap:anywhere; }
+    .getting-started { margin:29px 0 0; padding:23px 25px; border-left:3px solid #bcae9b; background:#eeece7; border-radius:0 8px 8px 0; }
+    .getting-started h2 { font-size:18px; }
+    .getting-started ol { margin:11px 0 0; padding-left:22px; font-size:15px; }
+    .getting-started li+li { margin-top:6px; }
+    code { font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:.9em; }
+    .note { margin:21px 0 0; font-size:13px; color:var(--muted); }
+    footer { margin-top:40px; padding-top:19px; border-top:1px solid var(--border); color:var(--muted); font-size:13px; }
+    footer a { color:var(--accent); text-underline-offset:3px; }
+    @media (max-width:620px) { main { padding:36px 20px; } .cards { grid-template-columns:1fr; } .card { padding:23px; } .materials { margin-top:31px; } .subtitle { font-size:18px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Harvard Catalyst · Biostatistics short course</p>
+    <h1>Statistical Methods for Truncated Time-to-Event Data</h1>
+    <p class="subtitle">Concepts, Methods, and Applications</p>
+    <p class="instructor"><strong>Jing Qian, PhD</strong><span class="affiliation">Professor of Biostatistics · University of Massachusetts Amherst</span></p>
+    <p class="date"><time datetime="2026-10-23">October 23, 2026</time></p>
+  </header>
+  <section class="materials" aria-labelledby="materials-heading">
+    <h2 id="materials-heading">In-class exercises</h2>
+    <p class="intro">Download your preferred format and follow along during the course.</p>
+    <div class="cards">
+      <article class="card">
+        <span class="badge">.R</span>
+        <h3>R script</h3>
+        <p>Exercise code and prompts in one script. Open in RStudio and run the examples a section at a time.</p>
+        <a class="download" href="files/Harvard-course-class-exercises.R" download="Harvard-course-class-exercises.R">Download R code <span aria-hidden="true">&nbsp;↓</span></a>
+        <span class="filename">Harvard-course-class-exercises.R</span>
+      </article>
+      <article class="card">
+        <span class="badge">.Rmd</span>
+        <h3>R Markdown</h3>
+        <p>Exercise instructions and editable code chunks together. Open in RStudio to work through the exercises.</p>
+        <a class="download secondary" href="files/Harvard-course-class-exercises.Rmd" download="Harvard-course-class-exercises.Rmd">Download R Markdown <span aria-hidden="true">&nbsp;↓</span></a>
+        <span class="filename">Harvard-course-class-exercises.Rmd</span>
+      </article>
+    </div>
+    <aside class="getting-started" aria-labelledby="start-heading">
+      <h2 id="start-heading">Getting started</h2>
+      <ol>
+        <li>Save either file to your computer and open it in RStudio.</li>
+        <li>Run the <strong>Setup</strong> section first to install the required packages. An internet connection is needed for installation and the GENIE example.</li>
+        <li>Follow the examples, then complete each <strong>Try it</strong> prompt.</li>
+      </ol>
+    </aside>
+    <p class="note">If a file opens in your browser, right-click its download button and choose “Save link as…” to save it with the <code>.R</code> or <code>.Rmd</code> extension.</p>
+  </section>
+  <footer>Course materials prepared by Jing Qian · <a href="mailto:qian@umass.edu">qian@umass.edu</a></footer>
+</main>
+</body>
+</html>
